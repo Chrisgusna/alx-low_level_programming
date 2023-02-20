@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
- * main - prints single numbers of base1m
+ * main - Prints numbers between 0 to 9.
  *
- * Return: 0, if succesful
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	/*
-	 * prints all single digits numbers 0f base 10,
-	 * starting from zero,only using put char,no char variables
-	 */
-	int x;
+	int i;
 
-	for (x = 0 ; x < 10 ; x++)
-		putchar(x + '0');
+	for (i = 48; i < 58; i++)
+	{
+		putchar(i);
+	}
 	putchar('\n');
 	return (0);
-} 
+}
+
