@@ -1,5 +1,11 @@
-#ifndef MAIN_H
-#define MAIN_H
+C - Static libraries 📃 0x09-static_libraries
+About this project;
+In this project i learnt and practiced;
+
+What is a static library, how does it work, how to create one, and how to use it
+Basic usage of ar, ranlib, nm
+Tasks file description;
+libmy.a: C Static library containing all the functionslisted below:
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
@@ -20,4 +26,5 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
-#endif
+main.h: Header file containing the prototypes of all functions included in libmy.a.
+create_static_lib.sh: Bash script that creates a static library called liball.a from all the .c files in the current directory.
